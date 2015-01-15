@@ -1,5 +1,5 @@
 {
-  "name": "lib-is",
+  "name": "is",
   "version": "0.0.1",
   "description": "オブジェクトの厳密な型判定を行うモジュール",
   "main": "index.js",
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://brain-net.backlog.jp/git/BRAIN_LIB_JS/is.git"
   },
   "author": "Brain",
   "license": "CC",
