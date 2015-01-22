@@ -21,7 +21,7 @@
     var is = require('./is');
 
 ### Browser
-    <script type="text/javascript" src="is.js"></script>>
+    <script type="text/javascript" src="is.js"></script>
 
 ### Test
-    $ npm test
+    $ npm test // run jshint & mocha
