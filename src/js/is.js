@@ -1,4 +1,12 @@
-(function (root) {
+(function (root, factory) {
+	'use strict';
+
+	if (typeof exports === 'object') {
+		module.exports = factory();
+	} else {
+		root.is = factory();
+	}
+}(this, function () {
 	'use strict';
 
 	var is = function (type, obj) {
@@ -15,4 +23,6 @@
 	} else {
 		root.is = is;
 	}
-}((this || 0).self || global));
+
+	return is;
+}));
