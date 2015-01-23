@@ -1,12 +1,14 @@
 {
   "name": "is",
   "version": "0.0.1",
-  "description": "オブジェクトの厳密な型判定を行うモジュール",
+  "description": "Make a determination of the type of object strictly.",
   "main": "index.js",
   "directories": {
     "test": "test/"
   },
   "scripts": {
+    "start": "export PATH='./node_modules/.bin:$PATH'",
+    "install": "npm start",
     "test": "npm run jshint && mocha",
     "jshint": "jshint src/js/*"
   },
@@ -14,8 +16,8 @@
     "type": "git",
     "url": "https://brain-net.backlog.jp/git/BRAIN_LIB_JS/is.git"
   },
-  "author": "Brain",
-  "license": "CC",
+  "author": "Yamashita",
+  "license": "MIT",
   "devDependencies": {
     "mocha": "^2.1.0",
     "power-assert": "^0.10.1",

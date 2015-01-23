@@ -1,8 +1,8 @@
 # Is.js
-オブジェクトの厳密な型判定を行うメソッドを提供する。
+"Is" is the method that make a determination of the type of the object strictly.
 
 ## Synopsis
-以下の型を判定できる。
+It possible to determine the following type.
 - String
 - Number
 - Array
@@ -13,9 +13,11 @@
 
 ## Usage
     var bool = is('Boolean', true); // true
-    var str = is('String', 'text'); // true
-    var obj = is('Object', {}); // true
     var arr = is('Array', 'text'); // false
+
+    if (is('Object', {})) {
+      // true
+    }
 
 ### Node
     var is = require('./is');
@@ -24,4 +26,5 @@
     <script type="text/javascript" src="is.js"></script>
 
 ### Test
+    $ npm install
     $ npm test // run jshint & mocha
