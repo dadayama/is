@@ -1,60 +1,106 @@
+'use strict';
+
 var assert = require('power-assert');
 var is = require('../index.js');
-describe('オブジェクトの型チェック', function () {
-	describe('真偽値', function () {
-		beforeEach(function () {
-			this.obj = true;
+
+describe('Check the type of object', function () {
+	var obj = null;
+
+	describe('Boolean', function () {
+		before(function () {
+			obj = true;
 		});
-		it('true の型は Boolean', function () {
-			assert(is('Boolean', this.obj));
+		it('"true" is the type of Boolean', function () {
+			assert(is('Boolean', obj));
 		});
+
+		before(function () {
+			obj = false;
+		});
+		it('"false" is the type of Boolean', function () {
+			assert(is('Boolean', obj));
+		});
+
 	});
-	describe('数値 - 0', function () {
-		beforeEach(function () {
-			this.obj = 0;
+
+	describe('Number', function () {
+		before(function () {
+			obj = 0;
 		});
-		it('0 の型は Number', function () {
-			assert(is('Number', this.obj));
+		it('"0" is the type of Number', function () {
+			assert(is('Number', obj));
 		});
+
+		before(function () {
+			obj = 1;
+		});
+		it('"1" is the type of Number', function () {
+			assert(is('Number', obj));
+		});
+
+		before(function () {
+			obj = -1;
+		});
+		it('"-1" is the type of Number', function () {
+			assert(is('Number', obj));
+		});
+
 	});
-	describe('文字列', function () {
-		beforeEach(function () {
-			this.obj = "text";
+
+	describe('String', function () {
+		before(function () {
+			obj = "";
 		});
-		it('"text" の型は String', function () {
-			assert(is('String', this.obj));
+		it('"" is the type of String', function () {
+			assert(is('String', obj));
 		});
+
+		before(function () {
+			obj = "text";
+		});
+		it('"text" is the type of String', function () {
+			assert(is('String', obj));
+		});
+
 	});
-	describe('オブジェクト', function () {
-		beforeEach(function () {
-			this.obj = {};
+
+	describe('Object', function () {
+		before(function () {
+			obj = {};
 		});
-		it('{} の型は Object', function () {
-			assert(is('Object', this.obj));
+		it('"{}" is the type of Object', function () {
+			assert(is('Object', obj));
 		});
+
 	});
-	describe('配列', function () {
-		beforeEach(function () {
-			this.obj = [];
+
+	describe('Array', function () {
+		before(function () {
+			obj = [];
 		});
-		it('[] の型は Array', function () {
-			assert(is('Array', this.obj));
+		it('"[]" is the type of Array', function () {
+			assert(is('Array', obj));
 		});
+
 	});
-	describe('未定義値', function () {
-		beforeEach(function () {
-			this.obj = undefined;
+
+	describe('Undefined', function () {
+		before(function () {
+			obj = undefined;
 		});
-		it('undefined の型は Undefined', function () {
-			assert(is('Undefined', this.obj));
+		it('"undefined" is the type of Undefined', function () {
+			assert(is('Undefined', obj));
 		});
+
 	});
-	describe('NULL値', function () {
-		beforeEach(function () {
-			this.obj = null;
+
+	describe('Null', function () {
+		before(function () {
+			obj = null;
 		});
-		it('null の型は Null', function () {
-			assert(is('Null', this.obj));
+		it('"null" is the type of Null', function () {
+			assert(is('Null', obj));
 		});
+
 	});
 });
