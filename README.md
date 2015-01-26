@@ -26,10 +26,6 @@ It possible to determine the following type.
     <script type="text/javascript" src="is.js"></script>
 
 ## OTHERS
-### Set node modules path
-
-    $ npm start // Export path of node modules.
-
-### How to test
+### Do Test
 
     $ npm test // Run jshint & mocha.
