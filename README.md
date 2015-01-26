@@ -11,7 +11,7 @@ It possible to determine the following type.
 - Undefined
 - Null
 
-## Usage
+## USAGE
     var bool = is('Boolean', true); // true
     var arr = is('Array', 'text'); // false
 
@@ -25,6 +25,6 @@ It possible to determine the following type.
 ### Browser
     <script type="text/javascript" src="is.js"></script>
 
-### Test
-    $ npm install
+## OTHERS
+### How to test
     $ npm test // run jshint & mocha

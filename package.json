@@ -10,7 +10,7 @@
     "start": "export PATH='./node_modules/.bin:$PATH'",
     "install": "npm start",
     "test": "npm run jshint && mocha",
-    "jshint": "jshint src/js/*"
+    "jshint": "jshint src/*"
   },
   "repository": {
     "type": "git",
