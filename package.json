@@ -7,10 +7,9 @@
     "test": "test/"
   },
   "scripts": {
-    "start": "export PATH='./node_modules/.bin:$PATH'",
-    "install": "npm start",
+    "install": "export PATH='./node_modules/.bin:$PATH'",
     "test": "npm run jshint && mocha",
-    "jshint": "jshint src/*"
+    "jshint": "jshint --reporter ./node_modules/jshint-stylish/stylish.js src/*"
   },
   "repository": {
     "type": "git",

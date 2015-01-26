@@ -1,7 +1,7 @@
 # Is.js
 "Is" is the method that make a determination of the type of the object strictly.
 
-## Synopsis
+## SYNOPSIS
 It possible to determine the following type.
 - String
 - Number
@@ -26,5 +26,10 @@ It possible to determine the following type.
     <script type="text/javascript" src="is.js"></script>
 
 ## OTHERS
+### Set node modules path
+
+    $ npm start // Export path of node modules.
+
 ### How to test
-    $ npm test // run jshint & mocha
+
+    $ npm test // Run jshint & mocha.
