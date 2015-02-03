@@ -18,11 +18,5 @@
 		return cls === type;
 	};
 
-	if (typeof exports === 'object') {
-		module.exports = is;
-	} else {
-		root.is = is;
-	}
-
 	return is;
 }));
