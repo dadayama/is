@@ -13,14 +13,15 @@ describe('Check the type of object', function () {
 		it('"true" is the type of Boolean', function () {
 			assert(is('Boolean', obj));
 		});
+	});
 
+	describe('Boolean', function () {
 		before(function () {
 			obj = false;
 		});
 		it('"false" is the type of Boolean', function () {
 			assert(is('Boolean', obj));
 		});
-
 	});
 
 	describe('Number', function () {
@@ -30,21 +31,24 @@ describe('Check the type of object', function () {
 		it('"0" is the type of Number', function () {
 			assert(is('Number', obj));
 		});
+	});
 
+	describe('Number', function () {
 		before(function () {
 			obj = 1;
 		});
 		it('"1" is the type of Number', function () {
 			assert(is('Number', obj));
 		});
+	});
 
+	describe('Number', function () {
 		before(function () {
 			obj = -1;
 		});
 		it('"-1" is the type of Number', function () {
 			assert(is('Number', obj));
 		});
-
 	});
 
 	describe('String', function () {
@@ -54,14 +58,15 @@ describe('Check the type of object', function () {
 		it('"" is the type of String', function () {
 			assert(is('String', obj));
 		});
+	});
 
+	describe('String', function () {
 		before(function () {
 			obj = "text";
 		});
 		it('"text" is the type of String', function () {
 			assert(is('String', obj));
 		});
-
 	});
 
 	describe('Object', function () {
@@ -71,7 +76,6 @@ describe('Check the type of object', function () {
 		it('"{}" is the type of Object', function () {
 			assert(is('Object', obj));
 		});
-
 	});
 
 	describe('Array', function () {
@@ -81,7 +85,6 @@ describe('Check the type of object', function () {
 		it('"[]" is the type of Array', function () {
 			assert(is('Array', obj));
 		});
-
 	});
 
 	describe('Undefined', function () {
@@ -91,7 +94,6 @@ describe('Check the type of object', function () {
 		it('"undefined" is the type of Undefined', function () {
 			assert(is('Undefined', obj));
 		});
-
 	});
 
 	describe('Null', function () {
@@ -101,6 +103,5 @@ describe('Check the type of object', function () {
 		it('"null" is the type of Null', function () {
 			assert(is('Null', obj));
 		});
-
 	});
 });
