@@ -1,9 +1,18 @@
 {
-  "strict": true,
-  "indent": 2,
-  "unused": true,
-  "devel": true,
-  "debug": true,
-  "eqnull": true,
-  "expr": true
+	"globals": {
+		"strict"     : true,
+		"indent"     : 2,
+		"unused"     : true,
+		"devel"      : true,
+		"debug"      : true,
+		"eqnull"     : true,
+		"expr"       : true,
+		/* MOCHA */
+		"describe"   : false,
+		"it"         : false,
+		"before"     : false,
+		"beforeEach" : false,
+		"after"      : false,
+		"afterEach"  : false
+	}
 }
