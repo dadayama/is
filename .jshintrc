@@ -1,13 +1,13 @@
 {
+	"unused"     : true,
+	"strict"     : true,
+	"indent"     : 2,
+	"devel"      : true,
+	"debug"      : true,
+	"eqnull"     : true,
+	"expr"       : true,
+	"require"    : false,
 	"globals": {
-		"strict"     : true,
-		"indent"     : 2,
-		"unused"     : true,
-		"devel"      : true,
-		"debug"      : true,
-		"eqnull"     : true,
-		"expr"       : true,
-		"require"    : false,
 		/* MOCHA */
 		"describe"   : false,
 		"it"         : false,
