@@ -6,7 +6,6 @@
 	"debug"      : true,
 	"eqnull"     : true,
 	"expr"       : true,
-	"require"    : false,
 	"globals": {
 		/* MOCHA */
 		"describe"   : false,
