@@ -3,6 +3,7 @@
 
 ## SYNOPSIS
 It possible to determine the following type.
+
 - Boolean
 - Number
 - String
