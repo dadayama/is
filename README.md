@@ -3,11 +3,16 @@
 
 ## SYNOPSIS
 It possible to determine the following type.
-- String
-- Number
-- Array
-- Object
 - Boolean
+- Number
+- String
+- Object
+- Array
+- Math
+- Date
+- RegExp
+- Function
+- Error
 - Undefined
 - Null
 

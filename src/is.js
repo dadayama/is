@@ -10,9 +10,7 @@
 	'use strict';
 
 	var is = function (type, obj) {
-		if (typeof type === 'undefined') {
-			throw new Error('type is required');
-		}
+		if (typeof type === 'undefined') { throw new Error('type is required'); }
 
 		var cls = Object.prototype.toString.call(obj).slice(8, -1);
 		return cls === type;
